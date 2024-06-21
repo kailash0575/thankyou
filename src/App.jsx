@@ -50,7 +50,7 @@ function App() {
   return (
     <div className='main_container'>
              <FloatingWhatsApp
-        accountName="ACEDIGITALSOLUTION"
+        accountName="ACE DIGITAL SOLUTION"
         src={null}
         statusMessage=""
         chatMessage="How can we help you ACED up? :)"
@@ -501,7 +501,7 @@ SEO" />
                     <input type="text" id="name" name="name" className='form_input_box' placeholder='Name*' required />
 
                     {/* <label for="phone" className='form_label'>Phone No.</label> */}
-                    <input type="tel" id="phone" name="phone" pattern="\d{10}" className='form_input_box' placeholder="Number*" required />
+                    <input type="tel" id="phone" name="phone" pattern="\d{10}"  minLength="10" maxLength="10" className='form_input_box' placeholder="Number*" required />
                     {/* <label for="message" className='form_label'>Your message</label> */}
 
 

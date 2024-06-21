@@ -672,7 +672,7 @@ padding-bottom: 30px;
   border: 1px solid #075e54 !important;
 }
 .styles-module_chatHeader__gaeOA .styles-module_statusTitle__NgfPQ {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .styles-module_whatsappChatBox__MdQ5U {
@@ -686,4 +686,7 @@ padding-bottom: 30px;
   font-size: 10px !important;
   
   color: #61CE70 !important;
+}
+.ace_services_card {
+  justify-content: center;
 }
