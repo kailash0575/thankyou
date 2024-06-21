@@ -72,7 +72,7 @@ function App() {
           <h1>Traffic with</h1>
           <h1>Our SEO </h1>
           <h1>Solutions</h1>
-          <p>Package Starts From Rs. 20,000</p>
+          <p>Package Starts From ₹ 20,000</p>
         </div>
         <div className="right_hero_section">
           <form className='form_container'>
