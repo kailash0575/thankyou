@@ -10,7 +10,7 @@ import { Pagination } from 'swiper/modules';
 
 // swiper
 
-import logo from './assets/photo/logo.svg'
+// import logo from './assets/photo/logo.svg'
 import main from './assets/photo/mail.svg'
 import phone from './assets/photo/phone.png'
 // import seo from './assets/photo/seo.svg'
@@ -58,10 +58,10 @@ function App() {
         avatar="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg"
       />
       <div className="navbar_container">
-        <div className="left_section"><img src={logo} alt="logo" /></div>
+        <div className="left_section"><img src={lg} alt="logo" /></div>
         <div className="right_section">
-          <button className='right_section_item'> <span><img src={main} alt="mail" /></span><a href="mailto:marketing@acedigitalsolution.com" className='right_section_item1'> marketing@acedigitalsolution.com</a></button>
-          <button className='right_section_item'> <span><img src={phone} alt="phone" /></span><a href="tel:7070454522"
+          <button className='right_section_item'> <img src={main} alt="mail" /><a href="mailto:marketing@acedigitalsolution.com" className='right_section_item1'> marketing@acedigitalsolution.com</a></button>
+          <button className='right_section_item'> <img src={phone} alt="phone" /><a href="tel:7070454522"
             className='right_section_item1'   > 707 045 4522</a></button>
         </div>
       </div>
