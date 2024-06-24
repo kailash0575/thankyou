@@ -554,7 +554,7 @@ SEO" />
           <p>Having clients in over seven sectors and across five
             continents, Ace digital </p>
           <p>solution is the fastest growing
-            performance marketing agencys</p>
+            performance marketing agency</p>
         </div>
         <div className="portfolio_container">
           <li><a href="https://drive.google.com/file/d/1OHa-28VQVEJyfloTBF1BkvvzCCVwCygH/view" target='_blank'> Our Portfolio</a></li>
