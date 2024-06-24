@@ -49,7 +49,7 @@ import { FloatingWhatsApp } from "react-floating-whatsapp";
 function App() {
   return (
     <div className='main_container'>
-             <FloatingWhatsApp
+      <FloatingWhatsApp
         accountName="ACE DIGITAL SOLUTION"
         src={null}
         statusMessage=""
@@ -171,7 +171,7 @@ Seo " /></div>
       </div>
       {/*  */}
       <div className="contact_us">
-        <button>Contact Us</button>
+        <button>Get Quotes</button>
       </div>
       <div className="audit_reports_container">
         <h3>Get the Free SEO Audit Report!</h3>
@@ -491,9 +491,9 @@ SEO" />
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
                     <video width="550" height="360" controls >
-                <source src={acevideo} type="video/mp4" />
-                {/* Your browser does not support the video tag. */}
-            </video>
+                      <source src={acevideo} type="video/mp4" />
+                      {/* Your browser does not support the video tag. */}
+                    </video>
                   </div>
                   <div className="form_inputs">
 
@@ -501,7 +501,7 @@ SEO" />
                     <input type="text" id="name" name="name" className='form_input_box' placeholder='Name*' required />
 
                     {/* <label for="phone" className='form_label'>Phone No.</label> */}
-                    <input type="tel" id="phone" name="phone" pattern="\d{10}"  minLength="10" maxLength="10" className='form_input_box' placeholder="Number*" required />
+                    <input type="tel" id="phone" name="phone" pattern="\d{10}" minLength="10" maxLength="10" className='form_input_box' placeholder="Number*" required />
                     {/* <label for="message" className='form_label'>Your message</label> */}
 
 
@@ -539,11 +539,11 @@ SEO" />
                 <img src={facebookicon} alt="facebookicon" />
               </a></li>
 
-              <li><a href="">
+              <li><a href="https://www.instagram.com/teamacedigital/">
                 <img src={instagram} alt="instagram" />
               </a></li>
               {/* linkedin */}
-              <li><a href="">
+              <li><a href="https://www.linkedin.com/company/ace-digital-solution/">
                 <img src={linkedin} alt="instagram" />
               </a></li>
             </div>
@@ -557,7 +557,7 @@ SEO" />
             performance marketing agency</p>
         </div>
         <div className="portfolio_container">
-          <li><a href="https://drive.google.com/file/d/1OHa-28VQVEJyfloTBF1BkvvzCCVwCygH/view" target='_blank'>Portfolio</a></li>
+          <li><a href="https://drive.google.com/file/d/1OHa-28VQVEJyfloTBF1BkvvzCCVwCygH/view" target='_blank'> Our Portfolio</a></li>
         </div>
         <div className="footer_bottom_container">
           <div className="footer_bottom_item"> <img src={googlepartner} alt="googlepartner" /> </div>
