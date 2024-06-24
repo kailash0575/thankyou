@@ -16,7 +16,7 @@
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 15px 40px;
   background-color: #FF9C33;
   align-items: center;
 }
@@ -613,7 +613,7 @@ width: 130px;
 .navbar_container {
   display: flex;
   justify-content: space-between;
-  padding: 10px 40px;
+  
   align-items: center;
 }
 .footer_right_section {
