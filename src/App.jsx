@@ -210,6 +210,20 @@ Seo " /></div>
       {/* our case study */}
 
       {/*  */}
+      <div className="audit_reports_container">
+        <h3>Get the Free SEO Audit Report!</h3>
+        <div className="form">
+          <form className='audit_form'>
+            <input type="text" id="name" name="name" className='form_input_box_audit' placeholder='Name*' required />
+            <input type="email" id="email" name="email" className='form_input_box_audit' placeholder='Email Address*' required />
+
+            <input type="tel" id="phone" name="phone" minLength="10" maxLength="10" pattern="\d{10}" className='form_input_box_audit' placeholder="Phone No*" required />
+            <input type="url" id="email" name="email" className='form_input_box_audit' placeholder='Website URL*' required />
+            <button type='submit'>Submit</button>
+          </form>
+        </div>
+      </div>
+      {/*  */}
       <div className="our_case_study">
         <h1>Our Case Studies</h1>
         <div className="our_case_study_container">
