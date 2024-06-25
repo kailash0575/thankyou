@@ -285,7 +285,7 @@ padding-bottom: 10px;
 }
 
 .graph_percentage {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 60px;
   display: flex;
@@ -293,7 +293,7 @@ padding-bottom: 10px;
 }
 
 .Ranked_keyword {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 36px;
   font-weight: 500;
 }
@@ -304,9 +304,6 @@ padding-bottom: 10px;
   line-height: 30px;
 }
 
-.result_container_item {
-  margin-top: 22px;
-}
 
 .our_case_study_container {
   display: flex;
@@ -696,4 +693,11 @@ padding-bottom: 30px;
 }
 .navbar_container {
   background: black;
+}
+.increase{
+  width: 42px;
+  height: 42px;
+}
+.study_img{
+  height: 50px;
 }

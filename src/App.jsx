@@ -237,7 +237,7 @@ Seo " /></div>
               <div className="result_container">
                 <p className='result'>Result</p>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={85}
@@ -252,7 +252,7 @@ Seo " /></div>
                     The Top 10 Search Results</p>
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>   <CountUp
+                  <p className='graph_percentage'> <img src={increase} alt="increase"  className='increase'/>   <CountUp
                     start={0}
                     end={51}
                     duration={5}
@@ -263,7 +263,7 @@ Seo " /></div>
 
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={216}
@@ -291,7 +291,7 @@ Seo " /></div>
               <div className="result_container">
                 <p className='result'>Result</p>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={125}
@@ -307,7 +307,7 @@ Seo " /></div>
                     website</p> */}
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={65}
@@ -320,7 +320,7 @@ Seo " /></div>
 
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={216}
@@ -349,7 +349,7 @@ Seo " /></div>
               <div className="result_container">
                 <p className='result'>Result</p>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={85}
@@ -367,7 +367,7 @@ Seo " /></div>
 
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase' />
                     <CountUp
                       start={0}
                       end={2}
@@ -382,7 +382,7 @@ Seo " /></div>
 
                 </div>
                 <div className="result_container_item">
-                  <p className='graph_percentage'> <span><img src={increase} alt="increase" /></span>
+                  <p className='graph_percentage'> <img src={increase} alt="increase" className='increase'/>
                     <CountUp
                       start={0}
                       end={216}
