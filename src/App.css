@@ -1018,5 +1018,10 @@ width: 32px;
       display: flex;
     justify-content: center;
     }
+    .video_size {
+   
+      height: 100% !important;
+      margin-bottom: 15px;
+  }
 /*  */
 }
