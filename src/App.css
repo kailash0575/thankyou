@@ -1009,5 +1009,14 @@ width: 32px;
   display: flex;
   gap: 10px;
 }
+.study_img {
+  width: 200px;
+ 
+}
+
+    .logo{
+      display: flex;
+    justify-content: center;
+    }
 /*  */
 }
