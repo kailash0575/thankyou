@@ -1074,5 +1074,8 @@ width: 40px !important;
   padding-left: 25px;
   padding-right: 25px;
 }
+.footer_bottom_container {
+ padding: 20px 25px;
+}
   /*  */
 }
