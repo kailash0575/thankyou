@@ -694,6 +694,9 @@ SEO"
             </div>
           </div>
           <div className="footer_right_section">
+            <div className="follow_us">
+              <p>Follow us!</p>
+            </div>
             <div className="footer_right_section_item_social_media">
               <li>
                 <a href="">
@@ -703,7 +706,7 @@ SEO"
 
               <li>
                 <a href="https://www.instagram.com/teamacedigital/">
-                  <img src={instagram} alt="instagram" />
+                  <img src={instagram} alt="instagram" className="instagram" />
                 </a>
               </li>
               {/* linkedin */}
@@ -716,11 +719,13 @@ SEO"
           </div>
         </div>
         <div className="footer_heading">
-          <p>
+          <p className="mobile_view">Having clients in over seven sectors and across five continents, Ace
+          digital  solution is the fastest growing performance marketing agency</p>
+          <p className="desktop_view">
             Having clients in over seven sectors and across five continents, Ace
             digital{" "}
           </p>
-          <p>solution is the fastest growing performance marketing agency</p>
+          <p className="desktop_view">solution is the fastest growing performance marketing agency</p>
         </div>
         <div className="portfolio_container">
           <li>

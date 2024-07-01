@@ -293,7 +293,9 @@
   display: flex;
   align-items: center;
 }
-
+.mobile_view{
+  display: none;
+}
 .Ranked_keyword {
   font-size: 22px;
   line-height: 36px;
@@ -421,7 +423,13 @@
 .form_container {
   position: relative;
 }
-
+.follow_us{
+  font-size: 26px;
+  font-family: "Montserrat", sans-serif;
+font-weight: 500;
+  color: #454545;
+  width: 110.82px;
+}
 .button_container {
   position: absolute;
   bottom: 0px;
@@ -458,7 +466,7 @@
   color: white;
   padding: 40px 40px;
   padding-top: 50px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer_logo {
@@ -612,7 +620,7 @@ Height
 }
 .footer_right_section {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 .footer_container_main {
@@ -913,6 +921,9 @@ Height
   .toggle_menu{
     display: block;
   }
+  .mobile_view{
+    display: block;
+  }
   .video_size {
     width: 320px !important;
     height: 400px !important ;
@@ -925,6 +936,7 @@ Height
   }
   #proposal_button {
     width: 260px;
+    padding: 5px 0px;
   }
   .button_container {
     bottom: 0px;
@@ -942,7 +954,7 @@ Height
   .footer_container {
     /* margin-top: 24px; */
 
-    padding: 22px 15px;
+    padding: 22px 25px;
     padding-top: 24px;
   }
   .footer_heading p {
@@ -958,6 +970,12 @@ Height
   }
   .footer_bottom_item img {
     width: 120px;
+  }
+  .footer_bottom_container {
+    border-bottom: 8px solid black;
+}
+  .desktop_view{
+    display: none;
   }
   .right_section_item1 {
     display: none;
@@ -1003,11 +1021,58 @@ Height
     /* color: white; */
     color:white;
   }
-.swiper-slide-prev{
+/* .swiper-slide-prev{
   margin-right: 0px !important;
 }
 .swiper-slide-active{
 margin-right: 0px !important  ;
+} */
+.toggle_menu{
+  width: 30%;
+}
+.left_section{
+  width: 30%;
+  display: flex;
+  justify-content: end;
+}
+.right_section{
+  width: 30%;
+  display: flex;
+    justify-content: end;
+}
+.fixed-size-textarea{
+  padding: 6px 12px;
+}
+.form_input_box {
+  margin-bottom: 20px;
+}
+.form_button {
+
+  height: 100%;
+  /* border: none; */
+ 
+}
+.follow_us {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #454545;
+  width: 45%;
+}
+.footer_right_section {
+  flex-direction: column;
+}
+.footer_right_section_item_social_media li {
+  
+  margin-top: 0px;
+}
+.instagram{
+width: 40px !important;
+}
+.footer_heading {
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
   /*  */
 }
