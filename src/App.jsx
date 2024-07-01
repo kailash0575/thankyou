@@ -1,6 +1,7 @@
 import "./App.css";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Icon } from "@iconify/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -58,11 +59,14 @@ function App() {
         avatar="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg"
       />
       <div className="navbar_container">
+        <div className="toggle_menu">
+        <Icon icon="mdi:hamburger-menu" width="24" height="24" className="toggle_menu_bar" />
+        </div>
         <div className="left_section">
           <img src={lg} alt="logo" />
         </div>
         <div className="right_section">
-          <button className="right_section_item">
+          <button className="right_section_item for_desktop">
             {" "}
             <img src={main} alt="mail" />
             <a
@@ -73,7 +77,7 @@ function App() {
               marketing@acedigitalsolution.com
             </a>
           </button>
-          <button className="right_section_item">
+          <button className="right_section_item for_desktop">
             {" "}
             <img src={phone} alt="phone" />
             <a href="tel:7070454522" className="right_section_item1">
@@ -81,6 +85,19 @@ function App() {
               707 045 4522
             </a>
           </button>
+          {/*  */}
+          {/*  */}{" "}
+          <a
+            href="mailto:marketing@acedigitalsolution.com"
+            className="right_section_item1 for_mobile"
+          >
+            {" "}
+            <Icon icon="ic:baseline-mail" width="24" height="24" />
+          </a>{" "}
+          <a href="tel:7070454522" className="right_section_item1 for_mobile">
+            {" "}
+            <Icon icon="material-symbols:call" width="24" height="24" />
+          </a>
         </div>
       </div>
       {/* hero section */}
@@ -616,7 +633,7 @@ SEO"
                 <div className="form_container_main">
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
-                    <video className="video_size"controls>
+                    <video className="video_size" controls>
                       <source src={acevideo} type="video/mp4" />
                       {/* Your browser does not support the video tag. */}
                     </video>
