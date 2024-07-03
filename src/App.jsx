@@ -49,6 +49,8 @@ import acevideo from "./assets/photo/acevideo.mp4";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 function App() {
   return (
+
+    
     <div className="main_container">
       <FloatingWhatsApp
         accountName="ACE DIGITAL SOLUTION"
@@ -60,7 +62,12 @@ function App() {
       />
       <div className="navbar_container">
         <div className="toggle_menu">
-        <Icon icon="mdi:hamburger-menu" width="24" height="24" className="toggle_menu_bar" />
+          <Icon
+            icon="mdi:hamburger-menu"
+            width="24"
+            height="24"
+            className="toggle_menu_bar"
+          />
         </div>
         <div className="left_section">
           <img src={lg} alt="logo" />
@@ -719,13 +726,17 @@ SEO"
           </div>
         </div>
         <div className="footer_heading">
-          <p className="mobile_view">Having clients in over seven sectors and across five continents, Ace
-          digital  solution is the fastest growing performance marketing agency</p>
+          <p className="mobile_view">
+            Having clients in over seven sectors and across five continents, Ace
+            digital solution is the fastest growing performance marketing agency
+          </p>
           <p className="desktop_view">
             Having clients in over seven sectors and across five continents, Ace
             digital{" "}
           </p>
-          <p className="desktop_view">solution is the fastest growing performance marketing agency</p>
+          <p className="desktop_view">
+            solution is the fastest growing performance marketing agency
+          </p>
         </div>
         <div className="portfolio_container">
           <li>
