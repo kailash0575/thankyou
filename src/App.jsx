@@ -2,7 +2,7 @@ import "./App.css";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Icon } from "@iconify/react";
-import React, { useRef, useEffect } from "react";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -48,13 +48,9 @@ import aws from "./assets/photo/aws.svg";
 import acevideo from "./assets/photo/acevideo.mp4";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 function App() {
-  //
-  const videoRef = useRef(undefined);
-  useEffect(() => {
-    videoRef.current.defaultMuted = true;
-  });
-  //
   return (
+
+    
     <div className="main_container">
       <FloatingWhatsApp
         accountName="ACE DIGITAL SOLUTION"
@@ -644,7 +640,7 @@ SEO"
                 <div className="form_container_main">
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
-                    <video className="video_size" ref={videoRef} controls>
+                    <video className="video_size" controls>
                       <source src={acevideo} type="video/mp4" />
                       {/* Your browser does not support the video tag. */}
                     </video>
