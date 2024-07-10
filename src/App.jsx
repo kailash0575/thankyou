@@ -57,6 +57,7 @@ function App() {
         chatMessage="How can we help you ACED up? :)"
         phoneNumber="7070454522"
         avatar="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg"
+        
       />
       <div className="navbar_container">
         <div className="toggle_menu">
