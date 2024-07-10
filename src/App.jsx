@@ -640,7 +640,7 @@ SEO"
                 <div className="form_container_main">
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
-                    <video className="video_size" controls>
+                    <video className="video_size" controls autoplay playsinline  >
                       <source src={acevideo} type="video/mp4" />
                       {/* Your browser does not support the video tag. */}
                     </video>
