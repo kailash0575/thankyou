@@ -49,8 +49,6 @@ import acevideo from "./assets/photo/acevideo.mp4";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 function App() {
   return (
-
-    
     <div className="main_container">
       <FloatingWhatsApp
         accountName="ACE DIGITAL SOLUTION"
@@ -640,12 +638,20 @@ SEO"
                 <div className="form_container_main">
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
-                    <video className="video_size" controls muted defaultMuted loop>
+                    <video
+                      className="video_size"
+                      preload="auto"
+                      muted
+                      controls
+                      autoPlay
+                      loop
+                      playsInline
+                    >
                       <source src={acevideo} type="video/mp4" />
                       {/* Your browser does not support the video tag. */}
                     </video>
                     {/*  */}
-                    
+
                     {/*  */}
                   </div>
                   <div className="form_inputs">
