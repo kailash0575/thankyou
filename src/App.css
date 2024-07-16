@@ -170,7 +170,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 400px;
+  /* width: 400px; */
+  width: 30%;
   height: 524px;
 }
 
