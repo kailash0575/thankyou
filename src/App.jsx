@@ -716,19 +716,19 @@ SEO"
             </div>
             <div className="footer_right_section_item_social_media">
               <li>
-                <a href="">
+                <a href="https://www.facebook.com/people/Ace-Digital-Solution/61559529158329/" target="_blank">
                   <img src={facebookicon} alt="facebookicon" />
                 </a>
               </li>
 
               <li>
-                <a href="https://www.instagram.com/teamacedigital/">
+                <a href="https://www.instagram.com/teamacedigital/" target="_blank">
                   <img src={instagram} alt="instagram" className="instagram" />
                 </a>
               </li>
               {/* linkedin */}
               <li>
-                <a href="https://www.linkedin.com/company/ace-digital-solution/">
+                <a href="https://www.linkedin.com/company/ace-digital-solution/" target="_blank">
                   <img src={linkedin} alt="instagram" />
                 </a>
               </li>
