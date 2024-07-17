@@ -57,7 +57,6 @@ function App() {
         chatMessage="How can we help you ACED up? :)"
         phoneNumber="7070454522"
         avatar="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg"
-        
       />
       <div className="navbar_container">
         <div className="toggle_menu">
@@ -716,19 +715,28 @@ SEO"
             </div>
             <div className="footer_right_section_item_social_media">
               <li>
-                <a href="https://www.facebook.com/people/Ace-Digital-Solution/61559529158329/" target="_blank">
+                <a
+                  href="https://www.facebook.com/people/Ace-Digital-Solution/61559529158329/"
+                  target="_blank"
+                >
                   <img src={facebookicon} alt="facebookicon" />
                 </a>
               </li>
 
               <li>
-                <a href="https://www.instagram.com/teamacedigital/" target="_blank">
+                <a
+                  href="https://www.instagram.com/teamacedigital/"
+                  target="_blank"
+                >
                   <img src={instagram} alt="instagram" className="instagram" />
                 </a>
               </li>
               {/* linkedin */}
               <li>
-                <a href="https://www.linkedin.com/company/ace-digital-solution/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/company/ace-digital-solution/"
+                  target="_blank"
+                >
                   <img src={linkedin} alt="instagram" />
                 </a>
               </li>
