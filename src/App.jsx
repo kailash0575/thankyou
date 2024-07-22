@@ -17,7 +17,7 @@ import phone from "./assets/photo/phone.png";
 // import seo from './assets/photo/seo.svg'
 import ecommerce from "./assets/photo/ecommerce.png";
 import content from "./assets/photo/content.png";
-import perprint from "./assets/photo/perprint.svg";
+import starlink from "./assets/photo/starlink.png";
 import increase from "./assets/photo/Increase.svg";
 import calcurb from "./assets/photo/calcurb.svg";
 import wmo from "./assets/photo/wmo.svg";
@@ -371,7 +371,7 @@ Seo "
           <div className="our_case_study_container_second">
             <div className="our_case_study_item">
               <div className="logo">
-                <img src={perprint} alt="perprint" className="study_img" />
+                <img src={starlink} alt="perprint" className="study_img starlink" />
               </div>
               <div className="result_container">
                 <p className="result">Result</p>

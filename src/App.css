@@ -43,7 +43,13 @@
   font-weight: 500;
   color: #ee7d05;
 }
-
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.starlink{
+  width: 216px !important;
+}
 .right_section {
   display: flex;
   gap: 30px;
@@ -174,7 +180,9 @@
   width: 30%;
   height: 524px;
 }
-
+.swiper-slide.swiper-slide-active {
+  border: 4px solid #ff9c33;
+}
 .ace_services_card {
   display: flex;
   gap: 60px;
@@ -313,8 +321,9 @@
   display: flex;
   justify-content: center;
   margin-top: 59px;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 25px;
+  /* flex-wrap: wrap; */
 }
 
 .Comprehensive {
@@ -879,6 +888,7 @@ Height
   }
   .our_case_study_container {
     margin-top: 16px;
+    flex-wrap: wrap;
   }
   .our_case_study_item {
     width: 320px;
