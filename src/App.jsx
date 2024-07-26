@@ -133,7 +133,7 @@ function App() {
               maxLength="10"
               pattern="\d{10}"
               className="form_input_box"
-              placeholder="Number*"
+              placeholder=" Phone No*"
               required
             />
 
@@ -149,7 +149,7 @@ function App() {
             <textarea
               id="textarea"
               className="fixed-size-textarea"
-              placeholder="Enter your question or message*"
+              placeholder="Enter your question or message"
             ></textarea>
 
             <button className="form_button" type="submit">
@@ -175,6 +175,9 @@ function App() {
             <p>
               Get your business to appear in local and location-related searches
             </p>
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
           {/*  */}
           <div className="card_item">
@@ -187,6 +190,9 @@ function App() {
               Stand out in a competitive marketplace by improving your SERP
               visibility and rankings
             </p>
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
           <div className="card_item">
             <div className="card_image">
@@ -198,6 +204,9 @@ function App() {
               Give your brand the voice it deserves with compelling content and
               captivate audiences
             </p>
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
           <div className="card_item">
             <div className="card_image">
@@ -208,6 +217,10 @@ function App() {
             <p>
               Get your business to appear in local and location-related searches
             </p>
+
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
           <div className="card_item">
             <div className="card_image">
@@ -223,6 +236,9 @@ Seo "
               Stand out in a competitive marketplace by improving your SERP
               visibility and rankings
             </p>
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
           <div className="card_item">
             <div className="card_image">
@@ -238,6 +254,9 @@ Seo "
               Give your brand the voice it deserves with compelling content and
               captivate audiences
             </p>
+            <div className="getQuotes">
+              <button>Get Quotes</button>
+            </div>
           </div>
         </div>
       </div>
@@ -674,7 +693,7 @@ SEO"
                       minLength="10"
                       maxLength="10"
                       className="form_input_box"
-                      placeholder="Number*"
+                      placeholder=" Phone No*"
                       required
                     />
                     {/* <label for="message" className='form_label'>Your message</label> */}
@@ -682,7 +701,7 @@ SEO"
                     <textarea
                       id="textarea"
                       className="fixed-size-textarea textarea_container"
-                      placeholder="Enter your question or message*"
+                      placeholder="Enter your question or message"
                     ></textarea>
                   </div>
                 </div>
@@ -759,7 +778,7 @@ SEO"
         <div className="portfolio_container">
           <li>
             <a
-              href="https://drive.google.com/file/d/1OHa-28VQVEJyfloTBF1BkvvzCCVwCygH/view"
+              href="https://drive.google.com/file/d/1m0tzKzRFSwL9mQghmhu3dPRhEH0IhRTM/view"
               target="_blank"
             >
               {" "}
