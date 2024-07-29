@@ -43,11 +43,11 @@
   font-weight: 500;
   color: #ee7d05;
 }
-.logo{
+.logo {
   display: flex;
   justify-content: center;
 }
-.starlink{
+.starlink {
   width: 216px !important;
 }
 .right_section {
@@ -100,9 +100,15 @@
   padding: 0 40px;
 }
 
+.error_message {
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* color: red; */
+}
 .form_input_box {
-  margin-bottom: 24px;
   padding: 16px 12px;
+  margin-bottom: 15px;
   border-radius: 24px;
   outline: none;
   border: 1px solid white;
@@ -120,11 +126,14 @@
   font-weight: 500;
   line-height: 24px;
 }
-
+.form_item{
+  display: flex;
+  flex-direction: column;
+}
 /*  */
 .right_hero_section {
   background-color: #ff9c33;
-  padding: 0 40px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +196,7 @@
   display: flex;
   gap: 60px;
 }
-.getQuotes button{
+.getQuotes button {
   padding: 10px 15px;
   font-family: "Poppins", sans-serif;
   background-color: #ee7d05;
@@ -782,9 +791,15 @@ Height
     border: none;
     position: relative;
     bottom: 18px;
-}
+  }
   /*  */
-
+  .error_message {
+    font-family: "Poppins", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* color: red; */
+    font-size: 10px;
+}
   .left_hero_section h1 {
     font-size: 48px;
 
@@ -1082,7 +1097,7 @@ margin-right: 0px !important  ;
     padding: 6px 12px;
   }
   .form_input_box {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .form_button {
     height: 100%;

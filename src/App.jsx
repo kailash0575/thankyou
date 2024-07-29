@@ -2,15 +2,11 @@ import "./App.css";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Icon } from "@iconify/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper/modules";
-
 // swiper
-
 // import logo from './assets/photo/logo.svg'
 import main from "./assets/photo/mail.svg";
 import phone from "./assets/photo/phone.png";
@@ -47,7 +43,37 @@ import meta from "./assets/photo/meta.svg";
 import aws from "./assets/photo/aws.svg";
 import acevideo from "./assets/photo/acevideo.mp4";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+//
+import { useForm } from "react-hook-form";
 function App() {
+  //
+  //
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm();
+  //
+  // const contactFrom = (data) => {
+  //   console.log(data);
+  //   // navigate("/")
+  //   reset();
+  // };
+  const contactFrom = async (data) => {
+    try {
+      const response = await axios.post(
+        process.env.REACT_APP_API_KEY + `/api/v1/auth/login`,
+        data,
+        { withCredentials: true }
+      );
+      //  response.data;
+      reset();
+    } catch (error) {
+      throw error;
+    }
+  };
   return (
     <div className="main_container">
       <FloatingWhatsApp
@@ -115,16 +141,25 @@ function App() {
           <p>Package Starts From ₹ 20,000</p>
         </div>
         <div className="right_hero_section">
-          <form className="form_container">
+          {/*  */}
+          <form
+            className="form_container"
+            onSubmit={handleSubmit(contactFrom)}
+            autoComplete="off"
+          >
             <input
               type="text"
               id="name"
               name="name"
               className="form_input_box"
               placeholder="Name*"
-              required
+              // required
+              autoComplete="off"
+              {...register("name", { required: true })}
             />
-
+            {errors.name && (
+              <span className="error_message">Name is required</span>
+            )}
             <input
               type="tel"
               id="phone"
@@ -134,23 +169,34 @@ function App() {
               pattern="\d{10}"
               className="form_input_box"
               placeholder=" Phone No*"
-              required
+              // required
+              autoComplete="off"
+              {...register("number", { required: true, valueAsNumber: true })}
             />
-
+            {errors.number && (
+              <span className="error_message"> Phone Number is required</span>
+            )}
             <input
               type="email"
               id="email"
               name="email"
               className="form_input_box"
               placeholder="Email Address*"
-              required
+              // required
+              autoComplete="off"
+              {...register("email", { required: true })}
             />
-
+            {errors.email && (
+              <span className="error_message">Email is required</span>
+            )}
             <textarea
               id="textarea"
-              className="fixed-size-textarea"
+              className="fixed-size-textarea "
               placeholder="Enter your question or message"
-            ></textarea>
+              //
+              autoComplete="off"
+              {...register("message", { required: false })}
+            />
 
             <button className="form_button" type="submit">
               {" "}
@@ -390,7 +436,11 @@ Seo "
           <div className="our_case_study_container_second">
             <div className="our_case_study_item">
               <div className="logo">
-                <img src={starlink} alt="perprint" className="study_img starlink" />
+                <img
+                  src={starlink}
+                  alt="perprint"
+                  className="study_img starlink"
+                />
               </div>
               <div className="result_container">
                 <p className="result">Result</p>
