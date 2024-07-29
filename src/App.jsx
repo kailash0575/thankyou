@@ -4,7 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Icon } from "@iconify/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import axios from "axios";
 // import required modules
+//
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+//
 import { Pagination } from "swiper/modules";
 // swiper
 // import logo from './assets/photo/logo.svg'
@@ -64,18 +69,21 @@ function App() {
   const contactFrom = async (data) => {
     try {
       const response = await axios.post(
-        process.env.REACT_APP_API_KEY + `/api/v1/auth/login`,
-        data,
-        { withCredentials: true }
+        "https://acedigitalsolution.com/php-api/api-insert.php",
+        data
+        // { withCredentials: true }
       );
       //  response.data;
       reset();
+      toast.success("We will contact you very soon.");
     } catch (error) {
       throw error;
     }
   };
+// 
   return (
     <div className="main_container">
+      <ToastContainer />
       <FloatingWhatsApp
         accountName="ACE DIGITAL SOLUTION"
         src={null}
@@ -149,21 +157,21 @@ function App() {
           >
             <input
               type="text"
-              id="name"
-              name="name"
+              id="fullname"
+              name="fullname"
               className="form_input_box"
               placeholder="Name*"
               // required
               autoComplete="off"
-              {...register("name", { required: true })}
+              {...register("fullname", { required: true })}
             />
-            {errors.name && (
+            {errors.fullname && (
               <span className="error_message">Name is required</span>
             )}
             <input
               type="tel"
-              id="phone"
-              name="phone"
+              id="phone_number"
+              name="phone_number"
               minLength="10"
               maxLength="10"
               pattern="\d{10}"
@@ -171,9 +179,12 @@ function App() {
               placeholder=" Phone No*"
               // required
               autoComplete="off"
-              {...register("number", { required: true, valueAsNumber: true })}
+              {...register("phone_number", {
+                required: true,
+                valueAsNumber: true,
+              })}
             />
-            {errors.number && (
+            {errors.phone_number && (
               <span className="error_message"> Phone Number is required</span>
             )}
             <input
@@ -194,8 +205,9 @@ function App() {
               className="fixed-size-textarea "
               placeholder="Enter your question or message"
               //
+              name="text_area"
               autoComplete="off"
-              {...register("message", { required: false })}
+              {...register("text_area", { required: false })}
             />
 
             <button className="form_button" type="submit">

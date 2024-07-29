@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "proxy": "https://acedigitalsolution.com/php-api/api-insert.php",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^5.0.8",
     "react-hook-form": "^7.52.1",
+    "react-toastify": "^10.0.5",
     "swiper": "^11.1.4"
   },
   "devDependencies": {
