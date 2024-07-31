@@ -25,7 +25,9 @@
   background-color: #ff9c33;
   align-items: center;
 }
-
+.package_container{
+  display: none;
+}
 .right_section_item {
   display: flex;
   align-items: center;
@@ -42,6 +44,44 @@
   line-height: 24px;
   font-weight: 500;
   color: #ee7d05;
+}
+.package_heading{
+  font-family: "Poppins", sans-serif;
+text-decoration: underline  ;
+padding: 0 40px;
+color: white;
+font-size: 18px;
+margin-bottom: 10px;
+}
+.package_item{
+  display: flex;
+  padding: 0 40px;
+}
+.package_item1{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  border-radius: 10px;
+}
+.package_item_rupee{
+  background-color: #ff9c33;
+  /* padding: 5px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+padding-right: 20px;
+border-radius: 5px;
+border-end-end-radius: 20px;
+border-top-right-radius: 20px;
+font-size: 25px;
+padding-left: 10px;
+}
+.package_item_rupee1{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+color: white;
+padding-right: 10px;
 }
 .logo {
   display: flex;
@@ -70,19 +110,28 @@
   width: 60%;
   padding-bottom: 10px;
 }
-
+.package_validity{
+  font-size: 18px;
+  /*  */
+  font-family: "Poppins", sans-serif;
+margin-top: 5px;
+}
 .hero_section_container {
   display: flex;
   justify-content: space-between;
 }
-
+.package_item_one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .left_hero_section h1 {
   font-size: 110px;
-  font-family: "Abril Fatface", serif;
-  color: white;
-  padding: 0 40px;
-  line-height: 120px;
-  font-weight: 400;
+    font-family: "Abril Fatface", serif;
+    color: white;
+    padding: 0 40px;
+    line-height: 115px;
+    font-weight: 400;
 }
 
 .right_hero_section {
@@ -119,14 +168,17 @@
   line-height: 24px;
   color: #828282;
 }
-
+.form2Input {
+  display: flex;
+  flex-direction: column;
+}
 .form_label {
   margin-bottom: 8px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 24px;
 }
-.form_item{
+.form_item {
   display: flex;
   flex-direction: column;
 }
@@ -799,7 +851,7 @@ Height
     margin-bottom: 5px;
     /* color: red; */
     font-size: 10px;
-}
+  }
   .left_hero_section h1 {
     font-size: 48px;
 

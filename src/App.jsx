@@ -61,12 +61,14 @@ function App() {
     formState: { errors },
   } = useForm();
   //
-  // const contactFrom = (data) => {
-  //   console.log(data);
-  //   // navigate("/")
-  //   reset();
-  // };
-  const contactFrom = async (data) => {
+  const {
+    register: registerForm1,
+    handleSubmit: handleSubmitForm1,
+    formState: { errors: errorsForm1 },
+    reset: resetForm1,
+  } = useForm();
+
+  const contactFrom1 = async (data) => {
     try {
       const response = await axios.post(
         "https://acedigitalsolution.com/php-api/api-insert.php",
@@ -74,13 +76,83 @@ function App() {
         // { withCredentials: true }
       );
       //  response.data;
-      reset();
+      resetForm1();
       toast.success("We will contact you very soon.");
     } catch (error) {
       throw error;
     }
   };
-// 
+  //
+  const {
+    register: registerForm2,
+    handleSubmit: handleSubmitForm2,
+    formState: { errors: errorsForm2 },
+    reset: resetForm2,
+  } = useForm();
+
+  const contactFrom2 = async (data) => {
+    try {
+      const response = await axios.post(
+        "https://acedigitalsolution.com/php-api/api-insert.php",
+        data
+        // { withCredentials: true }
+      );
+      //  response.data;
+      resetForm2();
+      toast.success("We will contact you very soon.");
+    } catch (error) {
+      throw error;
+    }
+  };
+
+  //
+  //
+  const {
+    register: registerForm3,
+    handleSubmit: handleSubmitForm3,
+    formState: { errors: errorsForm3 },
+    reset: resetForm3,
+  } = useForm();
+
+  const contactFrom3 = async (data) => {
+    try {
+      const response = await axios.post(
+        "https://acedigitalsolution.com/php-api/api-insert.php",
+        data
+        // { withCredentials: true }
+      );
+      //  response.data;
+      resetForm3();
+      toast.success("We will contact you very soon.");
+    } catch (error) {
+      throw error;
+    }
+  };
+  //
+  //
+  const {
+    register: registerForm4,
+    handleSubmit: handleSubmitForm4,
+    formState: { errors: errorsForm4 },
+    reset: resetForm4,
+  } = useForm();
+
+  const contactFrom4 = async (data) => {
+    try {
+      const response = await axios.post(
+        "https://acedigitalsolution.com/php-api/api-insert.php",
+        data
+        // { withCredentials: true }
+      );
+      //  response.data;
+      resetForm4();
+      toast.success("We will contact you very soon.");
+    } catch (error) {
+      throw error;
+    }
+  };
+  //
+  //
   return (
     <div className="main_container">
       <ToastContainer />
@@ -147,31 +219,49 @@ function App() {
           <h1>Our SEO </h1>
           <h1>Solutions</h1>
           <p>Package Starts From ₹ 20,000</p>
+
+          <div className="package_container">
+            <p className="package_heading">Monthly Package:</p>
+            <div className="package_container_item">
+              <div className="package_item">
+              <div className="package_item_one">
+
+                <div className="package_item1">
+                  <p className="package_item_rupee">₹</p>
+                  <p className="package_item_rupee1">25,000</p>
+                </div>
+                <p className="package_validity">Per Month
+                </p>
+              </div>
+            
+              </div>
+            </div>
+          </div>
         </div>
         <div className="right_hero_section">
           {/*  */}
           <form
             className="form_container"
-            onSubmit={handleSubmit(contactFrom)}
+            onSubmit={handleSubmitForm1(contactFrom1)}
             autoComplete="off"
           >
             <input
               type="text"
-              id="fullname"
-              name="fullname"
+              // id="fullname"
+              // name="fullname"
               className="form_input_box"
               placeholder="Name*"
               // required
               autoComplete="off"
-              {...register("fullname", { required: true })}
+              {...registerForm1("fullname", { required: true })}
             />
-            {errors.fullname && (
+            {errorsForm1.fullname && (
               <span className="error_message">Name is required</span>
             )}
             <input
               type="tel"
-              id="phone_number"
-              name="phone_number"
+              // id="phone_number"
+              // name="phone_number"
               minLength="10"
               maxLength="10"
               pattern="\d{10}"
@@ -179,35 +269,35 @@ function App() {
               placeholder=" Phone No*"
               // required
               autoComplete="off"
-              {...register("phone_number", {
+              {...registerForm1("phone_number", {
                 required: true,
                 valueAsNumber: true,
               })}
             />
-            {errors.phone_number && (
+            {errorsForm1.phone_number && (
               <span className="error_message"> Phone Number is required</span>
             )}
             <input
               type="email"
-              id="email"
-              name="email"
+              // id="email"
+              // name="email"
               className="form_input_box"
               placeholder="Email Address*"
               // required
               autoComplete="off"
-              {...register("email", { required: true })}
+              {...registerForm1("email", { required: true })}
             />
-            {errors.email && (
+            {errorsForm1.email && (
               <span className="error_message">Email is required</span>
             )}
             <textarea
-              id="textarea"
+              // id="textarea"
               className="fixed-size-textarea "
               placeholder="Enter your question or message"
               //
-              name="text_area"
+              // name="text_area"
               autoComplete="off"
-              {...register("text_area", { required: false })}
+              {...registerForm1("text_area", { required: false })}
             />
 
             <button className="form_button" type="submit">
@@ -325,43 +415,78 @@ Seo "
       <div className="audit_reports_container">
         <h3>Get the Free SEO Audit Report!</h3>
         <div className="form">
-          <form className="audit_form">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="form_input_box_audit"
-              placeholder="Name*"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="form_input_box_audit"
-              placeholder="Email Address*"
-              required
-            />
+          <form
+            className="audit_form"
+            onSubmit={handleSubmitForm2(contactFrom2)}
+            autoComplete="off"
+          >
+            <div className="form2Input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="form_input_box_audit"
+                placeholder="Name*"
+                // required
+                autoComplete="off"
+                {...registerForm2("fullname", { required: true })}
+              />
+              {errorsForm2.fullname && (
+                <span className="error_message">Name is required</span>
+              )}
+            </div>
+            <div className="form2Input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="form_input_box_audit"
+                placeholder="Email Address*"
+                // required
+                autoComplete="off"
+                {...registerForm2("email", { required: true })}
+              />
+              {errorsForm2.email && (
+                <span className="error_message">Email is required</span>
+              )}
+            </div>
+            <div className="form2Input">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                minLength="10"
+                maxLength="10"
+                pattern="\d{10}"
+                className="form_input_box_audit"
+                placeholder="Phone No*"
+                autoComplete="off"
+                {...registerForm2("phone_number", { required: true })}
+              />
+              {/*  */}
+              {/* phone_number */}
+              {errorsForm2.phone_number && (
+                <span className="error_message">Number is required</span>
+              )}
+            </div>
+            {/*  */}
+            <div className="form2Input">
+              <input
+                type="url"
+                className="form_input_box_audit"
+                placeholder="Website URL*"
+                // required
+                autoComplete="off"
+                {...registerForm2("text_area", { required: true })}
+              />
+              {/*  */}
+              {errorsForm2.text_area && (
+                <span className="error_message">Website url is required</span>
+              )}
+            </div>
+            {/*  */}
 
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              minLength="10"
-              maxLength="10"
-              pattern="\d{10}"
-              className="form_input_box_audit"
-              placeholder="Phone No*"
-              required
-            />
-            <input
-              type="url"
-              id="email"
-              name="email"
-              className="form_input_box_audit"
-              placeholder="Website URL*"
-              required
-            />
+            {/*  */}
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -400,43 +525,78 @@ Seo "
       <div className="audit_reports_container">
         <h3>Get the Free SEO Audit Report!</h3>
         <div className="form">
-          <form className="audit_form">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              className="form_input_box_audit"
-              placeholder="Name*"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="form_input_box_audit"
-              placeholder="Email Address*"
-              required
-            />
+          <form
+            className="audit_form"
+            onSubmit={handleSubmitForm3(contactFrom3)}
+            autoComplete="off"
+          >
+            <div className="form2Input">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                className="form_input_box_audit"
+                placeholder="Name*"
+                // required
+                autoComplete="off"
+                {...registerForm3("fullname", { required: true })}
+              />
+              {errorsForm3.fullname && (
+                <span className="error_message">Name is required</span>
+              )}
+            </div>
+            <div className="form2Input">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="form_input_box_audit"
+                placeholder="Email Address*"
+                // required
+                autoComplete="off"
+                {...registerForm3("email", { required: true })}
+              />
+              {errorsForm3.email && (
+                <span className="error_message">Email is required</span>
+              )}
+            </div>
+            <div className="form2Input">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                minLength="10"
+                maxLength="10"
+                pattern="\d{10}"
+                className="form_input_box_audit"
+                placeholder="Phone No*"
+                autoComplete="off"
+                {...registerForm3("phone_number", { required: true })}
+              />
+              {/*  */}
+              {/* phone_number */}
+              {errorsForm3.phone_number && (
+                <span className="error_message">Number is required</span>
+              )}
+            </div>
+            {/*  */}
+            <div className="form2Input">
+              <input
+                type="url"
+                className="form_input_box_audit"
+                placeholder="Website URL*"
+                // required
+                autoComplete="off"
+                {...registerForm3("text_area", { required: true })}
+              />
+              {/*  */}
+              {errorsForm3.text_area && (
+                <span className="error_message">Website url is required</span>
+              )}
+            </div>
+            {/*  */}
 
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              minLength="10"
-              maxLength="10"
-              pattern="\d{10}"
-              className="form_input_box_audit"
-              placeholder="Phone No*"
-              required
-            />
-            <input
-              type="url"
-              id="email"
-              name="email"
-              className="form_input_box_audit"
-              placeholder="Website URL*"
-              required
-            />
+            {/*  */}
             <button type="submit">Submit</button>
           </form>
         </div>
@@ -715,7 +875,11 @@ SEO"
         <div className="proposal_container_container">
           <div className="proposal_container">
             <div className="right_proposal_section">
-              <form className="form_container">
+              <form
+                className="form_container"
+                onSubmit={handleSubmitForm4(contactFrom4)}
+                autoComplete="off"
+              >
                 <div className="form_container_main">
                   <div className="left_proposal_section">
                     {/* <img src={leader} alt="leader" /> */}
@@ -743,8 +907,12 @@ SEO"
                       name="name"
                       className="form_input_box"
                       placeholder="Name*"
-                      required
+                      autoComplete="off"
+                      {...registerForm4("fullname", { required: true })}
                     />
+                    {errorsForm4.fullname && (
+                      <span className="error_message">Name is required</span>
+                    )}
 
                     {/* <label for="phone" className='form_label'>Phone No.</label> */}
                     <input
@@ -756,15 +924,26 @@ SEO"
                       maxLength="10"
                       className="form_input_box"
                       placeholder=" Phone No*"
-                      required
+                      // required
+                      autoComplete="off"
+                      {...registerForm4("phone_number", { required: true })}
                     />
+                    {errorsForm4.phone_number && (
+                      <span className="error_message">Number is required</span>
+                    )}
+
                     {/* <label for="message" className='form_label'>Your message</label> */}
 
                     <textarea
                       id="textarea"
                       className="fixed-size-textarea textarea_container"
                       placeholder="Enter your question or message"
+                      autoComplete="off"
+                      {...registerForm4("text_area", { required: true })}
                     ></textarea>
+                    {errorsForm4.text_area && (
+                      <span className="error_message">Message is required</span>
+                    )}
                   </div>
                 </div>
                 <div className="button_container">
