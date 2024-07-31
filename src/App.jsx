@@ -218,22 +218,35 @@ function App() {
           <h1>Traffic with</h1>
           <h1>Our SEO </h1>
           <h1>Solutions</h1>
-          <p>Package Starts From ₹ 20,000</p>
+          {/* <p>Package Starts From ₹ 20,000</p> */}
 
           <div className="package_container">
-            <p className="package_heading">Monthly Package:</p>
+            {/* <p className="package_heading">Monthly Package:</p> */}
             <div className="package_container_item">
               <div className="package_item">
-              <div className="package_item_one">
-
-                <div className="package_item1">
-                  <p className="package_item_rupee">₹</p>
-                  <p className="package_item_rupee1">25,000</p>
+                <div className="package_item_one">
+                  <div className="package_item1">
+                    <p className="package_item_rupee">₹</p>
+                    <p className="package_item_rupee1">25,000</p>
+                  </div>
+                  <p className="package_validity">Per Month</p>
                 </div>
-                <p className="package_validity">Per Month
-                </p>
-              </div>
-            
+                <div className="package_item_one">
+                  <div className="package_item1">
+                    <p className="package_item_rupee">₹</p>
+                    <p className="package_item_rupee1">75,000</p>
+                  </div>
+                  <p className="package_validity">3 + 1 Month</p>
+                </div>
+                {/*  */}
+                <div className="package_item_one">
+                  <div className="package_item1">
+                    <p className="package_item_rupee">₹</p>
+                    <p className="package_item_rupee1">1,00,000</p>
+                  </div>
+                  <p className="package_validity">4 + 2 Month</p>
+                </div>
+                {/*  */}
               </div>
             </div>
           </div>
@@ -370,7 +383,7 @@ function App() {
               <button>Get Quotes</button>
             </div>
           </div>
-          <div className="card_item">
+          {/* <div className="card_item">
             <div className="card_image">
               <img
                 src={wordpressseo}
@@ -405,7 +418,7 @@ Seo "
             <div className="getQuotes">
               <button>Get Quotes</button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/*  */}
@@ -494,6 +507,7 @@ Seo "
       {/* our result */}
       <div className="our_result">
         <h4>Our Results</h4>
+        <p className="our_result_para">10X Increment</p>
       </div>
       <Swiper
         initialSlide={1}
@@ -509,9 +523,11 @@ Seo "
         <SwiperSlide>
           {" "}
           <img src={growth1} />
+          {/* <p>sds</p> */}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
+          {/* <div class="overlay-text">8000</div> */}
           <img src={growth2} />
         </SwiperSlide>
         <SwiperSlide>
