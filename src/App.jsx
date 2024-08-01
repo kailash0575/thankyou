@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import axios from "axios";
 // import required modules
 //
+import cloud from "../src/assets/photo/cloud.png"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 //
@@ -215,41 +216,33 @@ function App() {
       <div className="hero_section_container">
         <div className="left_hero_section">
           <h1>Targeted</h1>
-          <h1>Traffic with</h1>
-          <h1>Our SEO </h1>
-          <h1>Solutions</h1>
+          <h1>Traffic with Our</h1>
+          <h1> SEO Solutions </h1>
+          {/* <h1>Solutions</h1> */}
           {/* <p>Package Starts From ₹ 20,000</p> */}
 
-          <div className="package_container">
-            {/* <p className="package_heading">Monthly Package:</p> */}
-            <div className="package_container_item">
-              <div className="package_item">
-                <div className="package_item_one">
-                  <div className="package_item1">
-                    <p className="package_item_rupee">₹</p>
-                    <p className="package_item_rupee1">25,000</p>
-                  </div>
-                  <p className="package_validity">Per Month</p>
-                </div>
-                <div className="package_item_one">
-                  <div className="package_item1">
-                    <p className="package_item_rupee">₹</p>
-                    <p className="package_item_rupee1">75,000</p>
-                  </div>
-                  <p className="package_validity">3 + 1 Month</p>
-                </div>
-                {/*  */}
-                <div className="package_item_one">
-                  <div className="package_item1">
-                    <p className="package_item_rupee">₹</p>
-                    <p className="package_item_rupee1">1,00,000</p>
-                  </div>
-                  <p className="package_validity">4 + 2 Month</p>
-                </div>
-                {/*  */}
-              </div>
-            </div>
+          {/* <p className="package_heading">Monthly Package:</p> */}
+         <div className="package_cloud_container">
+          <div className="cloud_container">
+<img src={cloud} alt="cloud" />
           </div>
+          <div className="item_package_container">
+
+          <div className="item_package item_package_one">
+            <p className="item_package1">3+1 Month</p>
+            <p className="item_package2">₹ 75,000</p>
+          </div>
+          <div className="item_package item_package_two">
+            <p className="item_package1">1 Month</p>
+            <p className="item_package2">₹ 25,000</p>
+          </div>
+          <div className="item_package item_package_three">
+            <p className="item_package1">4-2 Month</p>
+            <p className="item_package2">₹ 1,00,000</p>
+          </div>
+          </div>
+         </div>
+         
         </div>
         <div className="right_hero_section">
           {/*  */}
@@ -279,7 +272,7 @@ function App() {
               maxLength="10"
               pattern="\d{10}"
               className="form_input_box"
-              placeholder=" Phone No*"
+              placeholder="Phone No*"
               // required
               autoComplete="off"
               {...registerForm1("phone_number", {
