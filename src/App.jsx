@@ -222,27 +222,27 @@ function App() {
           {/* <p>Package Starts From ₹ 20,000</p> */}
 
           {/* <p className="package_heading">Monthly Package:</p> */}
-         <div className="package_cloud_container">
-          <div className="cloud_container">
-<img src={cloud} alt="cloud" />
-          </div>
-          <div className="item_package_container">
+          <div className="package_cloud_container">
+            <div className="cloud_container">
+              <img src={cloud} alt="cloud" />
+            </div>
+            <div className="item_package_container">
 
-          <div className="item_package item_package_one">
-            <p className="item_package1">3+1 Month</p>
-            <p className="item_package2">₹ 75,000</p>
+              <div className="item_package item_package_one">
+                <p className="item_package1">5+1 Month</p>
+                <p className="item_package2">₹ 75,000</p>
+              </div>
+              <div className="item_package item_package_two">
+                <p className="item_package1">1 Month</p>
+                <p className="item_package2">₹ 25,000</p>
+              </div>
+              <div className="item_package item_package_three">
+                <p className="item_package1">6+2 Month</p>
+                <p className="item_package2">₹ 1,00,000</p>
+              </div>
+            </div>
           </div>
-          <div className="item_package item_package_two">
-            <p className="item_package1">1 Month</p>
-            <p className="item_package2">₹ 25,000</p>
-          </div>
-          <div className="item_package item_package_three">
-            <p className="item_package1">4-2 Month</p>
-            <p className="item_package2">₹ 1,00,000</p>
-          </div>
-          </div>
-         </div>
-         
+
         </div>
         <div className="right_hero_section">
           {/*  */}
@@ -500,7 +500,7 @@ Seo "
       {/* our result */}
       <div className="our_result">
         <h4>Our Results</h4>
-        <p className="our_result_para">10X Increment</p>
+        {/* <p className="our_result_para">700% increase in organic traffic </p> */}
       </div>
       <Swiper
         initialSlide={1}
@@ -516,12 +516,18 @@ Seo "
         <SwiperSlide>
           {" "}
           <img src={growth1} />
-          {/* <p>sds</p> */}
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide   >
           {" "}
           {/* <div class="overlay-text">8000</div> */}
           <img src={growth2} />
+          <div className="our_result_heading" id="our_result_id">
+
+          </div>
+          {/* <div className="our_heading_container">
+
+            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+          </div> */}
         </SwiperSlide>
         <SwiperSlide>
           {" "}
