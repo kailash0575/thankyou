@@ -1449,20 +1449,20 @@ Height
   }
   /*  */
   .swiper-slide:before {
-   font-size: 16px;
-   
+    font-size: 16px;
+
     border: 2px solid white;
-   
+
     font-weight: bold;
   }
   /*  */
   .swiper-slide:after {
     font-size: 16px;
-    
-     border: 2px solid white;
-    
-     font-weight: bold;
-   }
+
+    border: 2px solid white;
+
+    font-weight: bold;
+  }
   /*  */
   .item_package_two {
     position: absolute;
