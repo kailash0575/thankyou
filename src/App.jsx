@@ -498,6 +498,9 @@ Seo "
         </div>
       </div>
       {/* our result */}
+      <div className="our_result_container_main">
+
+      
       <div className="our_result">
         <h4>Our Results</h4>
         {/* <p className="our_result_para">700% increase in organic traffic </p> */}
@@ -516,6 +519,13 @@ Seo "
         <SwiperSlide>
           {" "}
           <img src={growth1} />
+          <div className="our_result_heading" id="our_result_id">
+
+          </div>
+          <div className="our_heading_container">
+
+            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+          </div> 
         </SwiperSlide>
         <SwiperSlide   >
           {" "}
@@ -524,20 +534,28 @@ Seo "
           <div className="our_result_heading" id="our_result_id">
 
           </div>
-          {/* <div className="our_heading_container">
+          <div className="our_heading_container">
 
             <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
-          </div> */}
+          </div> 
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img src={growth3} />
+          <div className="our_result_heading" id="our_result_id">
+
+          </div>
+          <div className="our_heading_container">
+
+            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+          </div> 
         </SwiperSlide>
       </Swiper>
+      </div>
       {/* our case study */}
 
       {/*  */}
-      <div className="audit_reports_container">
+      <div className="audit_reports_container" id="audit_container_second">
         <h3>Get the Free SEO Audit Report!</h3>
         <div className="form">
           <form

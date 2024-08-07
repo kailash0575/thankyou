@@ -30,6 +30,8 @@
   color: #1a73e9;
 }
 /*  */
+
+/*  */
 .navbar_container {
   display: flex;
   justify-content: space-between;
@@ -341,7 +343,9 @@
 /*  */
 #heading_id {
   position: absolute;
-  top: 0%;
+  /* top: 0%; */
+  bottom: 0px;
+  width: 100%;
   /* left: 50%; */
   /* transform: translate(-50%, -50%); */
   /* height: 40px; */
@@ -349,10 +353,27 @@
   color: white;
   background: black;
   /* padding: 6px; */
-  font-size: 28px;
-  padding: 25px 5px;
-}
+  font-family: "Poppins", sans-serif;
 
+  font-size: 26px;
+  padding: 5px 5px;
+  background: linear-gradient(to bottom, rgba(255, 156, 51, 0), rgba(255, 156, 51, 1));
+    color: black;
+    font-weight: bold;
+    padding:10px;
+}
+/*  */
+.our_result_container_main{
+  --mask:
+    radial-gradient(143.11px at 50% 192px,#000 99%,#0000 101%) calc(50% - 128px) 0/256px 51% repeat-x,
+    radial-gradient(143.11px at 50% -128px,#0000 99%,#000 101%) 50% 64px/256px calc(51% - 64px) repeat-x,
+    radial-gradient(143.11px at 50% calc(100% - 192px),#000 99%,#0000 101%) 50% 100%/256px 51% repeat-x,
+    radial-gradient(143.11px at 50% calc(100% + 128px),#0000 99%,#000 101%) calc(50% - 128px) calc(100% - 64px)/256px calc(51% - 64px) repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          background-color: #ff9c33;
+          padding: 88px 0px;
+}
 /*  */
 /* our_result_id */
 .swiper-slide:before {
@@ -387,6 +408,8 @@
   box-sizing: border-box;
   color: black;
   font-weight: bold;
+  display: none;
+
 }
 /*  */
 .swiper-slide:after {
@@ -419,6 +442,7 @@
   box-sizing: border-box;
   color: black;
   font-weight: bold;
+  display: none;
 }
 /*  */
 .swiper-slide:hover::before {
@@ -434,9 +458,9 @@
 .swiper-pagination {
   display: none;
 }
-.swiper-slide.swiper-slide-active {
+/* .swiper-slide.swiper-slide-active {
   border: 4px solid #ff9c33;
-}
+} */
 .ace_services_card {
   display: flex;
   gap: 60px;
@@ -498,7 +522,9 @@
 
   font-weight: 700;
 }
-
+#audit_container_second{
+  margin-top: 30px;
+}
 .form_input_box_audit {
   padding: 20px 16px;
   border-radius: 24px;
@@ -512,6 +538,7 @@
   background: #ff9c33;
   padding: 62px 0px;
   margin-top: 102px;
+  margin-bottom: 50px;
 }
 
 .audit_form {
@@ -799,8 +826,8 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 22px;
+  /* margin-top: 60px; */
+  /* margin-bottom: 22px; */
 }
 .card_image img {
   width: 100px;
@@ -1149,9 +1176,15 @@ Height
   .our_result h4 {
     font-size: 24px;
 
-    margin-top: 30px;
+    /* margin-top: 8px; */
     margin-bottom: 4px;
   }
+  /*  */
+  #heading_id {
+    font-size: 16px;
+    padding: 5px;
+}
+  /*  */
   .swiper-slide-active {
     width: 320px !important;
     height: 141.14px !important ;
@@ -1448,6 +1481,9 @@ Height
     right: 12%;
   }
   /*  */
+  #audit_container_second{
+    margin-top: 0px;
+  }
   .swiper-slide:before {
     font-size: 16px;
 
@@ -1455,6 +1491,13 @@ Height
 
     font-weight: bold;
   }
+  /*  */
+  .audit_reports_container {
+    background: #ff9c33;
+    padding: 62px 0px;
+    margin-top: 40px;
+    margin-bottom: -1px;
+}
   /*  */
   .swiper-slide:after {
     font-size: 16px;
