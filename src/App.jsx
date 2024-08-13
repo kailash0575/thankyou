@@ -298,7 +298,7 @@ function App() {
             )}
             <textarea
               // id="textarea"
-              className="fixed-size-textarea "
+              className="fixed-size-textarea " id="textarea1"
               placeholder="Enter your question or message"
               //
               // name="text_area"
@@ -476,20 +476,7 @@ Seo "
               )}
             </div>
             {/*  */}
-            <div className="form2Input">
-              <input
-                type="url"
-                className="form_input_box_audit"
-                placeholder="Website URL*"
-                // required
-                autoComplete="off"
-                {...registerForm2("text_area", { required: true })}
-              />
-              {/*  */}
-              {errorsForm2.text_area && (
-                <span className="error_message">Website url is required</span>
-              )}
-            </div>
+
             {/*  */}
 
             {/*  */}
@@ -500,57 +487,57 @@ Seo "
       {/* our result */}
       <div className="our_result_container_main">
 
-      
-      <div className="our_result">
-        <h4>Our Results</h4>
-        {/* <p className="our_result_para">700% increase in organic traffic </p> */}
-      </div>
-      <Swiper
-        initialSlide={1}
-        spaceBetween={50}
-        slidesPerView={3}
-        centeredSlides={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          {" "}
-          <img src={growth1} />
-          <div className="our_result_heading" id="our_result_id">
 
-          </div>
-          <div className="our_heading_container">
+        <div className="our_result">
+          <h4>Our Results</h4>
+          {/* <p className="our_result_para">700% increase in organic traffic </p> */}
+        </div>
+        <Swiper
+          initialSlide={1}
+          spaceBetween={50}
+          slidesPerView={3}
+          centeredSlides={true}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            {" "}
+            <img src={growth1} />
+            <div className="our_result_heading" id="our_result_id">
 
-            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide   >
-          {" "}
-          {/* <div class="overlay-text">8000</div> */}
-          <img src={growth2} />
-          <div className="our_result_heading" id="our_result_id">
+            </div>
+            <div className="our_heading_container">
 
-          </div>
-          <div className="our_heading_container">
+              <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide   >
+            {" "}
+            {/* <div class="overlay-text">8000</div> */}
+            <img src={growth2} />
+            <div className="our_result_heading" id="our_result_id">
 
-            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
-          </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-          {" "}
-          <img src={growth3} />
-          <div className="our_result_heading" id="our_result_id">
+            </div>
+            <div className="our_heading_container">
 
-          </div>
-          <div className="our_heading_container">
+              <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            {" "}
+            <img src={growth3} />
+            <div className="our_result_heading" id="our_result_id">
 
-            <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
-          </div> 
-        </SwiperSlide>
-      </Swiper>
+            </div>
+            <div className="our_heading_container">
+
+              <p className="our_result_heading" id="heading_id">700% Increase In Organic Traffic </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
       {/* our case study */}
 
@@ -613,20 +600,7 @@ Seo "
               )}
             </div>
             {/*  */}
-            <div className="form2Input">
-              <input
-                type="url"
-                className="form_input_box_audit"
-                placeholder="Website URL*"
-                // required
-                autoComplete="off"
-                {...registerForm3("text_area", { required: true })}
-              />
-              {/*  */}
-              {errorsForm3.text_area && (
-                <span className="error_message">Website url is required</span>
-              )}
-            </div>
+
             {/*  */}
 
             {/*  */}
@@ -949,6 +923,19 @@ SEO"
 
                     {/* <label for="phone" className='form_label'>Phone No.</label> */}
                     <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="form_input_box"
+                      placeholder="Email Address*"
+                      // required
+                      autoComplete="off"
+                      {...registerForm4("email", { required: true })}
+                    />
+                    {errorsForm4.email && (
+                      <span className="error_message">Email is required</span>
+                    )}
+                    <input
                       type="tel"
                       id="phone"
                       name="phone"
@@ -962,21 +949,15 @@ SEO"
                       {...registerForm4("phone_number", { required: true })}
                     />
                     {errorsForm4.phone_number && (
-                      <span className="error_message">Number is required</span>
+                      <span className="error_message">Phone Number is required</span>
                     )}
 
                     {/* <label for="message" className='form_label'>Your message</label> */}
 
-                    <textarea
-                      id="textarea"
-                      className="fixed-size-textarea textarea_container"
-                      placeholder="Enter your question or message"
-                      autoComplete="off"
-                      {...registerForm4("text_area", { required: true })}
-                    ></textarea>
-                    {errorsForm4.text_area && (
-                      <span className="error_message">Message is required</span>
-                    )}
+
+
+
+
                   </div>
                 </div>
                 <div className="button_container">

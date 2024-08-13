@@ -164,11 +164,11 @@
   align-items: center;
 }
 .left_hero_section h1 {
-  font-size: 95px;
+  font-size: 80px;
   font-family: "Abril Fatface", serif;
   color: white;
   padding: 0 40px;
-  line-height: 105px;
+  line-height: 80px;
   font-weight: 400;
   text-align: center;
 }
@@ -286,7 +286,7 @@
   background-color: #ff9c33;
   padding: 10px 40px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -1046,6 +1046,7 @@ Height
     width: 100%;
   }
   .right_hero_section {
+    align-items: center;
     width: 100%;
   }
   .hero_section_container {
@@ -1169,7 +1170,7 @@ Height
     width: 156px;
   }
   .audit_form button {
-    padding: 5px 29px;
+    padding: 10px 53px;
 
     font-size: 14px;
   }
@@ -1348,6 +1349,9 @@ Height
   .for_desktop {
     display: none;
   }
+  /* #textarea1{
+    height: 150px;
+  } */
   .for_mobile {
     display: block;
   }
