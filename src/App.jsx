@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 // import Thankyou from "./Thankyou";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Icon } from "@iconify/react";
+import Footer from './Footer'
 import "swiper/css";
 import "swiper/css/pagination";
 import axios from "axios";
@@ -54,12 +55,13 @@ import aws from "./assets/photo/aws.svg";
 import acevideo from "./assets/photo/acevideo.mp4";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 //
+import Navbar from './Navbar'
 import { useForm } from "react-hook-form";
 function App() {
   //
   //
   // 
-  const [isRouteHidden, setIsRouteHidden] = useState(true);
+ 
   // 
   const {
     register,
@@ -189,53 +191,7 @@ function App() {
           phoneNumber="7070454522"
           avatar="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg"
         />
-        <div className="navbar_container">
-          <div className="toggle_menu">
-            <Icon
-              icon="mdi:hamburger-menu"
-              width="24"
-              height="24"
-              className="toggle_menu_bar"
-            />
-          </div>
-          <div className="left_section">
-            <img src={lg} alt="logo" />
-          </div>
-          <div className="right_section">
-            <button className="right_section_item for_desktop">
-              {" "}
-              <img src={main} alt="mail" />
-              <a
-                href="mailto:marketing@acedigitalsolution.com"
-                className="right_section_item1"
-              >
-                {" "}
-                marketing@acedigitalsolution.com
-              </a>
-            </button>
-            <button className="right_section_item for_desktop">
-              {" "}
-              <img src={phone} alt="phone" />
-              <a href="tel:7070454522" className="right_section_item1">
-                {" "}
-                707 045 4522
-              </a>
-            </button>
-            {/*  */}
-            {/*  */}{" "}
-            <a
-              href="mailto:marketing@acedigitalsolution.com"
-              className="right_section_item1 for_mobile"
-            >
-              {" "}
-              <Icon icon="ic:baseline-mail" width="24" height="24" />
-            </a>{" "}
-            <a href="tel:7070454522" className="right_section_item1 for_mobile">
-              {" "}
-              <Icon icon="material-symbols:call" width="24" height="24" />
-            </a>
-          </div>
-        </div>
+            <Navbar/>
         {/* hero section */}
         <div className="hero_section_container">
           <div className="left_hero_section">
@@ -1000,89 +956,7 @@ SEO"
           </div>
         </div>
         {/* footer */}
-        <div className="footer_container_main">
-          <div className="footer_container">
-            <div className="footer_left_section">
-              <div className="footer_right_section_item">
-                <img src={lg} alt="logo" className="footer_logo" />
-              </div>
-            </div>
-            <div className="footer_right_section">
-              <div className="follow_us">
-                <p>Follow us!</p>
-              </div>
-              <div className="footer_right_section_item_social_media">
-                <li>
-                  <a
-                    href="https://www.facebook.com/teamacedigital/"
-                    target="_blank"
-                  >
-                    <img src={facebookicon} alt="facebookicon" />
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://www.instagram.com/teamacedigital/"
-                    target="_blank"
-                  >
-                    <img src={instagram} alt="instagram" className="instagram" />
-                  </a>
-                </li>
-                {/* linkedin */}
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/ace-digital-solution/"
-                    target="_blank"
-                  >
-                    <img src={linkedin} alt="instagram" />
-                  </a>
-                </li>
-              </div>
-            </div>
-          </div>
-          <div className="footer_heading">
-            <p className="mobile_view">
-              Having clients in over seven sectors and across five continents, Ace
-              digital solution is the fastest growing performance marketing agency
-            </p>
-            <p className="desktop_view">
-              Having clients in over seven sectors and across five continents, Ace
-              digital{" "}
-            </p>
-            <p className="desktop_view">
-              solution is the fastest growing performance marketing agency
-            </p>
-          </div>
-          <div className="portfolio_container">
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1m0tzKzRFSwL9mQghmhu3dPRhEH0IhRTM/view"
-                target="_blank"
-              >
-                {" "}
-                Our Portfolio
-              </a>
-            </li>
-          </div>
-          <div className="footer_bottom_container">
-            <div className="footer_bottom_item">
-              {" "}
-              <img src={googlepartner} alt="googlepartner" />{" "}
-            </div>
-            <div className="footer_bottom_item">
-              <img src={hubspot} alt="googlepartner" />
-            </div>
-            <div className="footer_bottom_item">
-              {" "}
-              <img src={meta} alt="meta" />{" "}
-            </div>
-            <div className="footer_bottom_item">
-              {" "}
-              <img src={aws} alt="aws" />{" "}
-            </div>
-          </div>
-        </div>
+         <Footer/>
       </div>
     </>
   );
