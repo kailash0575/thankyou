@@ -1448,6 +1448,14 @@ Height
     height: 100%;
     /* border: none; */
   }
+  .Thankyou_container p {
+    font-size: 18px;
+   
+}
+.Thankyou_container h1 {
+  font-size: 40px;
+ 
+}
   .follow_us {
     font-size: 12px;
     font-family: "Montserrat", sans-serif;
