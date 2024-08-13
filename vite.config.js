@@ -6,3 +6,4 @@ export default defineConfig({
   base : "/seo-lp",
   plugins: [react()],
 })
+  
