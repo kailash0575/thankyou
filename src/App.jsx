@@ -990,7 +990,7 @@ SEO"
             <div className="footer_right_section_item_social_media">
               <li>
                 <a
-                  href="https://www.facebook.com/people/Ace-Digital-Solution/61559529158329/"
+                  href="https://www.facebook.com/teamacedigital/"
                   target="_blank"
                 >
                   <img src={facebookicon} alt="facebookicon" />
